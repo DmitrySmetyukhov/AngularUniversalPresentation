@@ -1,0 +1,20 @@
+<mat-card *ngIf="(details$ | async) as dog" class="dog-card mat-elevation-z10">
+
+  <mat-card-header>
+
+    <mat-card-title>{{dog.breed}}</mat-card-title>
+
+  </mat-card-header>
+
+  <img mat-card-image [src]="dog.imageUrl">
+
+  <mat-card-actions class="dog-actions">
+
+    <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/dogs']">
+      BACK
+    </button>
+
+  </mat-card-actions>
+
+</mat-card>
+

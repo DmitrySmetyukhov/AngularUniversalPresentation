@@ -14,10 +14,6 @@
 
         <img mat-card-image [src]="dog.imageUrl">
 
-        <mat-card-content>
-          <p>{{dog.details}}</p>
-        </mat-card-content>
-
         <mat-card-actions class="dog-actions">
 
           <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/dogs', dog.id]">

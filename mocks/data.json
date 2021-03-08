@@ -1,14 +1,17 @@
 {
   "dogs": [
     {
+      "id": "1",
       "breed": "Collie",
       "imageUrl": "https://1.bp.blogspot.com/-D9ka_W_eiNA/WpRHnWgbd1I/AAAAAAAAHpg/l-hvUYgkdTAA5JpazrCcmNM5G5y6h2u2QCLcBGAs/s1600/Collie-2.jpg"
     },
     {
+      "id" : "2",
       "breed": "Labrador",
       "imageUrl": "https://i.insider.com/5ef54cb61918242cfb4ec653?width=700"
     },
     {
+      "id": "3",
       "breed": "Golden Retriever",
       "imageUrl": "https://www.scvgie.com/sites/default/files/styles/large/adaptive-image/public/golden-retriever-dog-breed-info.jpg?itok=1qE0OhxP"
     }
