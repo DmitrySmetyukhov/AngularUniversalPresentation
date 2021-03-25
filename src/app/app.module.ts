@@ -11,19 +11,27 @@ import {MatCardModule} from '@angular/material/card';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
+import {HomeComponent} from './home/home.component';
 import {HttpClientModule} from '@angular/common/http';
-import { DetailsComponent } from './details/details.component';
+import {DetailsComponent} from './details/details.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {AppShellNoRenderDirective} from './directives/app-shell-no-render.directive';
+import {AppShellRenderDirective} from './directives/app-shell-render.directive';
+import {DogResolver} from './services/dog.resolver';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    AboutUsComponent,
+    AppShellNoRenderDirective,
+    AppShellRenderDirective
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -34,8 +42,9 @@ import { DetailsComponent } from './details/details.component';
     MatButtonModule,
     MatTabsModule,
     MatCardModule,
+    MatProgressSpinnerModule,
   ],
-  providers: [],
+  providers: [DogResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule {

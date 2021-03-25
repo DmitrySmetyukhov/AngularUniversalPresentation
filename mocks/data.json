@@ -3,17 +3,23 @@
     {
       "id": "1",
       "breed": "Collie",
+      "description": "The Collie is a lithe, strong, responsive, active dog, carrying no useless timber, standing naturally straight and firm. The deep, moderately wide chest shows strength, the sloping shoulders and well-bent hocks indicate speed and grace, and the face shows high intelligence. The Collie presents an impressive, proud picture of true balance, each part being in harmonious proportion to every other part and to the whole. Except for the technical description that is essential to this Standard and without which no Standard for the guidance of breeders and judges is adequate, it could be stated simply that no part of the Collie ever seems to be out of proportion to any other part. Timidity, frailness, sullenness, viciousness, lack of animation, cumbersome appearance and lack of over-all balance impair the general character.",
+      "shortDescription": "The Collie is a lithe, strong, responsive, active dog, carrying no useless timber, standing naturally straight and firm",
       "imageUrl": "https://1.bp.blogspot.com/-D9ka_W_eiNA/WpRHnWgbd1I/AAAAAAAAHpg/l-hvUYgkdTAA5JpazrCcmNM5G5y6h2u2QCLcBGAs/s1600/Collie-2.jpg"
     },
     {
-      "id" : "2",
+      "id": "2",
       "breed": "Labrador",
+      "description": "The Labrador Retriever is a strongly built, medium-sized, short-coupled, dog possessing a sound, athletic, well-balanced conformation that enables it to function as a retrieving gun dog; the substance and soundness to hunt waterfowl or upland game for long hours under difficult conditions; the character and quality to win in the show ring; and the temperament to be a family companion. Physical features and mental characteristics should denote a dog bred to perform as an efficient Retriever of game with a stable temperament suitable for a variety of pursuits beyond the hunting environment.\n\nThe most distinguishing characteristics of the Labrador Retriever are its short, dense, weather resistant coat; an “otter” tail; a clean-cut head with broad back skull and moderate stop; powerful jaws; and its “kind,” friendly eyes, expressing character, intelligence and good temperament.",
+      "shortDescription": "The Labrador Retriever is a strongly built, medium-sized, short-coupled, dog",
       "imageUrl": "https://i.insider.com/5ef54cb61918242cfb4ec653?width=700"
     },
     {
       "id": "3",
       "breed": "Golden Retriever",
-      "imageUrl": "https://www.scvgie.com/sites/default/files/styles/large/adaptive-image/public/golden-retriever-dog-breed-info.jpg?itok=1qE0OhxP"
+      "description": "A symmetrical, powerful, active dog, sound and well put together, not clumsy nor long in the leg, displaying a kindly expression and possessing a personality that is eager, alert and self-confident. Primarily a hunting dog, he should be shown in hard working condition. Overall appearance, balance, gait and purpose to be given more emphasis than any of his component parts. Faults-Any departure from the described ideal shall be considered faulty to the degree to which it interferes with the breed’s purpose or is contrary to breed character.",
+      "shortDescription": "A symmetrical, powerful, active dog, sound and well put together, not clumsy nor long in the leg, displaying a kindly expression and possessing a personality that is eager, alert and self-confident",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Golden_retriever_stehfoto.jpg"
     }
   ]
 }

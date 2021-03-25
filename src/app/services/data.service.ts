@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {IDog} from '../interfaces/dog.interface';
@@ -14,5 +14,9 @@ export class DataService {
 
   getAll(): Observable<IDog[]> {
     return this.http.get<IDog[]>(`${this.API_URL}/dogs`);
+  }
+
+  getById(id: string): Observable<IDog> {
+    return this.http.get<IDog>(`${this.API_URL}/dogs/${id}`);
   }
 }

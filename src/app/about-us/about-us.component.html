@@ -1,27 +1,19 @@
-
-
-<!--*appShellNoRender-->
-<mat-card class="dog-card mat-elevation-z10" >
+<mat-card class="about-us-card mat-elevation-z10">
 
   <mat-card-header>
 
-    <mat-card-title>{{dog.breed}}</mat-card-title>
+    <mat-card-title>About Us</mat-card-title>
 
   </mat-card-header>
 
-  <img mat-card-image [src]="dog.imageUrl">
-
-  <div>
-    {{dog.description}}
-  </div>
+  <img mat-card-image src="https://s.wsj.net/public/resources/images/B3-EU419_201908_GR_20190822110317.jpg">
 
   <mat-card-actions class="dog-actions">
 
     <button mat-button class="mat-raised-button mat-primary" [routerLink]="['/dogs']">
-      BACK
+      MAIN
     </button>
 
   </mat-card-actions>
 
 </mat-card>
-

@@ -9,7 +9,7 @@
         <span>Dogs</span>
       </a>
 
-      <a mat-list-item routerLink="/about">
+      <a mat-list-item routerLink="/about-us">
         <span>About</span>
       </a>
 
@@ -23,6 +23,12 @@
     </button>
   </mat-toolbar>
 
+
   <router-outlet></router-outlet>
+
+  <div *appShellRender class="app-spinner-container">
+    <mat-spinner></mat-spinner>
+  </div>
+
 
 </mat-sidenav-container>

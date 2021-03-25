@@ -164,7 +164,6 @@
             "browserTarget": "angular-universal-presentation:build:production",
             "serverTarget": "angular-universal-presentation:server:production",
             "routes": [
-              "/"
             ]
           },
           "configurations": {

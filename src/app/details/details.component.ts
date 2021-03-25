@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {map, switchMap} from 'rxjs/operators';
 import {DataService} from '../services/data.service';
-import {Observable} from 'rxjs';
 import {IDog} from '../interfaces/dog.interface';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-details',
@@ -11,17 +10,19 @@ import {IDog} from '../interfaces/dog.interface';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-  details$: Observable<IDog>;
+  dog: IDog;
 
   constructor(
     private _route: ActivatedRoute,
-    private _dataService: DataService) {
+    private _dataService: DataService,
+    private _title: Title,
+    private _meta: Meta) {
   }
 
   ngOnInit(): void {
-    this.details$ = this._route.params.pipe(
-      switchMap(params => this._dataService.getAll().pipe(map(dogs => dogs.find(dog => dog.id === params.id))))
-    );
-  }
+    this.dog = this._route.snapshot.data.dog;
 
+    this._title.setTitle(this.dog.breed);
+    this._meta.addTag({name: 'description', content: this.dog.shortDescription});
+  }
 }
